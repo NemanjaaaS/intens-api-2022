@@ -1,5 +1,5 @@
 # Intens Api DevOps
-Uputstvo za izradu.
+Uputstvo za izradu. TEST
 
 ## Koraci
 1. Forkovati repozitorijum
