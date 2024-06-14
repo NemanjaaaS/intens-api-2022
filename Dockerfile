@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . /app
 
+ENV PORT=8080
+
 RUN mvn clean install
 
 FROM openjdk:8-jdk
