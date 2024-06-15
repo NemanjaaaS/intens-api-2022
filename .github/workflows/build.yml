@@ -17,8 +17,16 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
         
-    - name: Build and push
+    - name: Build and push to Docker Hub
       uses: docker/build-push-action@v5
       with:
           push: true
           tags: nemanjaaas99/intens-praksa:latest
+
+    - name: Deploy to Azure
+      env: 
+        DOCKER_HOST: ${{ secrets.DOCKER_HOST }}
+      run: |
+        docker pull nemanjaaas99/intens-praksa:latest
+        docker stop webapp || true
+        docker run -d -p 80:8080 --name webapp nemanjaaas99/intens-praksa:latest
