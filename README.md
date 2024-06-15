@@ -1,5 +1,5 @@
 # Intens Api DevOps
-Uputstvo za izradu. TEST
+Uputstvo za izradu.
 
 ## Koraci
 1. Forkovati repozitorijum
@@ -12,7 +12,7 @@ Uputstvo za izradu. TEST
 ### Korisni Linkovi
 https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
 
-### Potrebni Alati
+### Potrebni Alati.
 1. Java 8 https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
 2. Eclipse / IntelliJ / Alat po izboru
 3. Docker https://www.docker.com/products/docker-desktop
